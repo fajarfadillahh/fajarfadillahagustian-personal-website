@@ -12,10 +12,12 @@ export default function Button(
   return (
     <button
       className={twMerge(
-        "inline-flex h-11 items-center gap-2 rounded-xl px-6 uppercase",
+        "group/button relative inline-flex h-11 cursor-pointer items-center gap-2 rounded-xl px-6 uppercase transition duration-500",
         variant === "primary" && "bg-orange-500 text-white",
-        variant === "secondary" && "border border-orange-600",
-        variant === "text" && "h-auto border-transparent px-0",
+        variant === "secondary" &&
+          "border border-orange-600 hover:bg-orange-500 hover:text-white",
+        variant === "text" &&
+          "h-auto border-transparent px-0 after:absolute after:top-full after:h-px after:w-0 after:bg-orange-600 after:transition-all after:duration-500 after:content-[''] hover:after:w-full",
         className,
       )}
       {...rest}
