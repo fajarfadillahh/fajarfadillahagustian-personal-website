@@ -3,4 +3,14 @@
 
 @theme {
   --font-archivo: "Archivo", sans-serif;
+
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full px-4 md:px-8 lg:px-16;
+  }
 }
