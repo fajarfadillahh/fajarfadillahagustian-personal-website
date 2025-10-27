@@ -1,3 +1,13 @@
+import project1 from "@/assets/images/project-1.jpg";
+import project2 from "@/assets/images/project-2.jpg";
+import project3 from "@/assets/images/project-3.jpg";
+import project4 from "@/assets/images/project-4.jpg";
+import project5 from "@/assets/images/project-5.jpg";
+
+import testimonial1 from "@/assets/images/testimonial-1.jpg";
+import testimonial2 from "@/assets/images/testimonial-2.jpg";
+import testimonial3 from "@/assets/images/testimonial-3.jpg";
+
 export const navItems = [
   {
     label: "About",
@@ -24,23 +34,23 @@ export const navItems = [
 export const projects = [
   {
     name: "Artisan Brew Co.",
-    image: "/assets/images/project-1.jpg",
+    image: project1,
   },
   {
     name: "Wavelength Studios",
-    image: "/assets/images/project-2.jpg",
+    image: project2,
   },
   {
     name: "Nova Fitness",
-    image: "/assets/images/project-3.jpg",
+    image: project3,
   },
   {
     name: "Urban Plates",
-    image: "/assets/images/project-4.jpg",
+    image: project4,
   },
   {
     name: "Bloom Botanicals",
-    image: "/assets/images/project-5.jpg",
+    image: project5,
   },
 ];
 
@@ -67,14 +77,14 @@ export const faqs = [
   },
 ];
 
-const testimonials = [
+export const testimonials = [
   {
     name: "Sarah Chen",
     company: "Pixel Perfect",
     role: "Head of Design",
     quote:
       "Alex's expertise in both technical development and design created a beautiful, high-performing website.",
-    image: "/assets/images/testimonial-1.jpg",
+    image: testimonial1,
     imagePositionY: 0.2,
   },
   {
@@ -83,7 +93,7 @@ const testimonials = [
     role: "Founder",
     quote:
       "Alex transformed our boutique coffee brand with a website that perfectly balances aesthetics and functionality.",
-    image: "/assets/images/testimonial-2.jpg",
+    image: testimonial2,
     imagePositionY: 0.1,
   },
   {
@@ -92,7 +102,7 @@ const testimonials = [
     role: "Creative Director",
     quote:
       "The collaborative process was amazing. Alex brought lots of fresh perspectives and innovative solutions.",
-    image: "/assets/images/testimonial-3.jpg",
+    image: testimonial3,
     imagePositionY: 0.55,
   },
 ];
