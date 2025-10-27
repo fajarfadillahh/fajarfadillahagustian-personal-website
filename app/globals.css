@@ -18,3 +18,11 @@
     @apply py-24 md:mt-16 md:py-32;
   }
 }
+
+/* for animate title hero */
+.line {
+  overflow: hidden;
+}
+.word {
+  transform: translateY(100%);
+}

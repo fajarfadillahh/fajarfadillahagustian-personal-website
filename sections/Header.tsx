@@ -112,7 +112,7 @@ export default function SectionHeader() {
     <header>
       <div
         ref={navScope}
-        className="fixed top-0 left-0 h-0 w-full overflow-hidden bg-stone-900"
+        className="fixed top-0 left-0 z-10 h-0 w-full overflow-hidden bg-stone-900"
       >
         <nav className="mt-20 flex flex-col">
           {navItems.map((item, index) => (
@@ -148,7 +148,7 @@ export default function SectionHeader() {
         </nav>
       </div>
 
-      <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md">
+      <div className="fixed top-0 left-0 z-10 w-full mix-blend-difference backdrop-blur-md">
         <div className="container max-w-full!">
           <div className="flex h-20 items-center justify-between">
             <div>
@@ -162,7 +162,7 @@ export default function SectionHeader() {
         </div>
       </div>
 
-      <div className="fixed top-0 left-0 w-full">
+      <div className="fixed top-0 left-0 z-10 w-full">
         <div className="container max-w-full!">
           <div className="flex h-20 items-center justify-end">
             <div className="flex items-center gap-4">
