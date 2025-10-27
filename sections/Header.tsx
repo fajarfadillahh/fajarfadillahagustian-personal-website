@@ -2,8 +2,9 @@
 
 import Button from "@/components/Button";
 import { navItems } from "@/data/site";
+import { scrollToHash } from "@/lib/scrollToHash";
 import { motion, useAnimate } from "motion/react";
-import { MouseEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SectionHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,19 +96,6 @@ export default function SectionHeader() {
     navAnimate,
   ]);
 
-  const handleClickMobileNavItem = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setIsOpen(false);
-
-    const url = new URL(e.currentTarget.href);
-    const hash = url.hash;
-
-    const target = document.querySelector(hash);
-
-    if (!target) return;
-    target?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <header>
       <div
@@ -120,7 +108,7 @@ export default function SectionHeader() {
               href={item.href}
               key={index}
               className="group/nav-item relative border-t border-stone-800 py-8 text-stone-200 last:border-b"
-              onClick={handleClickMobileNavItem}
+              onClick={(e) => scrollToHash(e, () => setIsOpen(false))}
             >
               <div className="container flex max-w-full! items-center justify-between">
                 <span className="text-3xl transition-all duration-500 group-hover/nav-item:pl-4">

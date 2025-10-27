@@ -2,6 +2,7 @@
 
 import Button from "@/components/Button";
 import { navItems } from "@/data/site";
+import { scrollToHash } from "@/lib/scrollToHash";
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 export default function SectionFooter() {
@@ -34,7 +35,7 @@ export default function SectionFooter() {
             <div>
               <nav className="mt-16 flex flex-col gap-8 md:mt-0 md:items-end">
                 {navItems.map((item, index) => (
-                  <a href="#" key={index}>
+                  <a href={item.href} key={index} onClick={scrollToHash}>
                     <Button variant="text" className="text-lg">
                       {item.label}
                     </Button>
