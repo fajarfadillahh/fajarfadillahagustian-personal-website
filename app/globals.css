@@ -13,4 +13,8 @@
   .container {
     @apply mx-auto w-full px-4 md:px-8 lg:px-16;
   }
+
+  .section {
+    @apply py-24 md:mt-16 md:py-32;
+  }
 }
