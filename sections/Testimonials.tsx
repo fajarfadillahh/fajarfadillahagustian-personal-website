@@ -8,7 +8,7 @@ export default function SectionTestimonials() {
   const testiIndex = 0;
 
   return (
-    <section className="section">
+    <section id="testimonials" className="section">
       <h2 className="flex flex-col overflow-hidden text-4xl md:text-7xl lg:text-8xl">
         <span className="whitespace-nowrap">
           Some nice words from my past clients

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SectionProjects() {
   return (
-    <section className="section">
+    <section id="projects" className="section">
       <div className="container">
         <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected works</h2>
 
