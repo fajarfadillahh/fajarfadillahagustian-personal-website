@@ -7,10 +7,7 @@ import SectionIntro from "@/sections/Intro";
 import SectionProjects from "@/sections/Projects";
 import SectionTestimonials from "@/sections/Testimonials";
 
-export const metadata = generateMetadata({
-  title: "Personal Website ✨",
-  description: "Selamat datang di officialy website Fajar Fadillah Agustian 🌱",
-});
+export const metadata = generateMetadata();
 
 export default function HomePage() {
   return (
