@@ -42,8 +42,8 @@ export default function SectionFAQs() {
 
                 <div
                   className={twMerge(
-                    "inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-stone-400 bg-stone-200 transition-all duration-500",
-                    index === selectedIndex && "rotate-45",
+                    "inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-stone-400 bg-stone-200 transition-all duration-500 group-hover/faqs:-translate-x-8",
+                    index === selectedIndex && "-translate-x-8 rotate-45",
                   )}
                 >
                   <PlusIcon size={24} />
