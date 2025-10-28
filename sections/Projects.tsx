@@ -1,43 +1,29 @@
 "use client";
 
 import { projects } from "@/data/site";
-import { stagger, useAnimate, useInView } from "motion/react";
+import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
+import { useInView } from "motion/react";
 import Image from "next/image";
 import { useEffect } from "react";
-import SplitType from "split-type";
 
 export default function SectionProjects() {
-  const [titleScope, titleAnimate] = useAnimate();
-  const inView = useInView(titleScope, {
+  const { scope, entranceAnimation } = useTextRevealAnimation();
+  const inView = useInView(scope, {
     once: true,
   });
 
   useEffect(() => {
-    new SplitType(titleScope.current.querySelector("h2"), {
-      types: "lines,words",
-      tagName: "span",
-    });
-  }, [titleScope]);
-
-  useEffect(() => {
     if (inView) {
-      titleAnimate(
-        titleScope.current.querySelectorAll(".word"),
-        {
-          transform: "translateY(0)",
-        },
-        {
-          duration: 0.5,
-          delay: stagger(0.2),
-        },
-      );
+      entranceAnimation();
     }
-  }, [inView, titleScope, titleAnimate]);
+  }, [inView, scope, entranceAnimation]);
 
   return (
-    <section id="projects" className="section" ref={titleScope}>
+    <section id="projects" className="section">
       <div className="container">
-        <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected works</h2>
+        <h2 className="text-4xl md:text-7xl lg:text-8xl" ref={scope}>
+          Selected works
+        </h2>
 
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map((project, index) => (

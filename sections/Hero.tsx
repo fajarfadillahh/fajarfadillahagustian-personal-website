@@ -2,21 +2,15 @@
 
 import heroImage from "@/assets/images/hero-image.jpg";
 import Button from "@/components/Button";
-import {
-  motion,
-  stagger,
-  useAnimate,
-  useScroll,
-  useTransform,
-} from "motion/react";
+import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
+import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import SplitType from "split-type";
 
 export default function SectionHero() {
-  const [titleScope, titleAnimate] = useAnimate();
-  const scrollingDiv = useRef<HTMLDivElement>(null);
+  const { scope, entranceAnimation } = useTextRevealAnimation();
 
+  const scrollingDiv = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollingDiv,
     offset: ["start end", "end start"],
@@ -25,22 +19,8 @@ export default function SectionHero() {
   const potraitWidth = useTransform(scrollYProgress, [0, 1], ["100%", "240%"]);
 
   useEffect(() => {
-    new SplitType(titleScope.current, {
-      types: "lines,words",
-      tagName: "div",
-    });
-
-    titleAnimate(
-      titleScope.current.querySelectorAll(".word"),
-      {
-        transform: "translateY(0)",
-      },
-      {
-        duration: 0.5,
-        delay: stagger(0.2),
-      },
-    );
-  }, []);
+    entranceAnimation();
+  }, [entranceAnimation]);
 
   return (
     <section>
@@ -51,7 +31,7 @@ export default function SectionHero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="mt-40 text-5xl md:mt-0 md:text-6xl lg:text-7xl"
-              ref={titleScope}
+              ref={scope}
             >
               Crafting digital experiences through code and creative design
             </motion.h1>
