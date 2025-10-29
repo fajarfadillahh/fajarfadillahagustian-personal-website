@@ -90,7 +90,7 @@ export const faqs = [
 
 export const testimonials = [
   {
-    name: "Gufronnakan Arif W.",
+    name: "Gufronnaka Arif W.",
     company: "FG Labs Agency",
     role: "Founder & Developer",
     quote:
