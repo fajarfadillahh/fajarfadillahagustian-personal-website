@@ -23,9 +23,7 @@ export default function SectionFooter() {
         <div className="section">
           <div className="flex items-center gap-3">
             <div className="size-3 animate-pulse rounded-full bg-green-400"></div>
-            <span className="uppercase">
-              One spot available for the next month
-            </span>
+            <span className="uppercase">available for your project</span>
           </div>
 
           <div className="grid md:grid-cols-3 md:items-center">
@@ -37,47 +35,53 @@ export default function SectionFooter() {
                 Enough talk. Let&apos;s make something great together.
               </h2>
 
-              <Button
-                variant="secondary"
-                className="mt-8"
-                iconAfter={
-                  <div className="size-6 overflow-hidden">
-                    <div className="flex h-6 w-12 transition-transform duration-500 group-hover/button:-translate-x-1/2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="size-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="size-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                }
+              <a
+                href="mailto:fajarfadillahagustian@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Contact Me
-              </Button>
+                <Button
+                  variant="secondary"
+                  className="mt-8"
+                  iconAfter={
+                    <div className="size-6 overflow-hidden">
+                      <div className="flex h-6 w-12 transition-transform duration-500 group-hover/button:-translate-x-1/2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="size-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="size-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  }
+                >
+                  Send to My Email
+                </Button>
+              </a>
             </div>
 
             <div>

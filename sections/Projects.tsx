@@ -28,8 +28,9 @@ export default function SectionProjects() {
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map((project, index) => (
             <a
-              href="#"
               key={index}
+              href={project.href}
+              target="_blank"
               className="group/projects relative flex flex-col border-t border-dotted border-stone-400 py-6 last:border-b hover:cursor-pointer md:py-8 lg:py-10"
             >
               <div className="absolute bottom-0 left-0 h-0 w-full bg-stone-300 transition-all duration-500 group-hover/projects:h-full"></div>

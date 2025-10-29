@@ -25,8 +25,8 @@ export default function SectionIntro() {
     >
       <div className="container">
         <h2 className="text-4xl md:text-7xl lg:w-[80%] lg:text-8xl" ref={scope}>
-          Building beautiful websites with clean code and thoughtful design to
-          help your business and stand out online
+          Blending creativity and clean code to build digital experiences that
+          inspire, engage, and set your brand apart
         </h2>
       </div>
     </section>

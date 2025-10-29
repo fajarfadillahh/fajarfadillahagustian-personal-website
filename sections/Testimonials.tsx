@@ -45,7 +45,7 @@ export default function SectionTestimonials() {
             x: transformTop,
           }}
         >
-          Some nice words from my past clients
+          Some love from the cool folks I've worked with
         </motion.span>
         <motion.span
           className="self-end whitespace-nowrap text-orange-500"
@@ -53,7 +53,7 @@ export default function SectionTestimonials() {
             x: transformBottom,
           }}
         >
-          Some nice words from my past clients
+          Some love from the cool folks I've worked with
         </motion.span>
       </h2>
 

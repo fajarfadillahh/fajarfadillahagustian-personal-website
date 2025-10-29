@@ -1,8 +1,9 @@
 "use client";
 
-import heroImage from "@/assets/images/hero-image.jpg";
+import heroImage from "@/assets/images/hero-image.webp";
 import Button from "@/components/Button";
 import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
+import { scrollToHash } from "@/lib/scrollToHash";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -33,7 +34,7 @@ export default function SectionHero() {
               className="mt-40 text-5xl md:mt-0 md:text-6xl lg:text-7xl"
               ref={scope}
             >
-              Crafting digital experiences through code and creative design
+              From concept to code shaping bold ideas into digital reality
             </motion.h1>
 
             <div className="mt-10 flex flex-col items-start gap-6 md:flex-row md:items-center">
@@ -45,45 +46,47 @@ export default function SectionHero() {
                   delay: 1.75,
                 }}
               >
-                <Button
-                  variant="secondary"
-                  iconAfter={
-                    <div className="size-5 overflow-hidden">
-                      <div className="flex h-5 w-10 transition-transform duration-500 group-hover/button:-translate-x-1/2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="size-5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="size-5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-                          />
-                        </svg>
+                <a href="#projects" onClick={scrollToHash}>
+                  <Button
+                    variant="secondary"
+                    iconAfter={
+                      <div className="size-5 overflow-hidden">
+                        <div className="flex h-5 w-10 transition-transform duration-500 group-hover/button:-translate-x-1/2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                            />
+                          </svg>
+                        </div>
                       </div>
-                    </div>
-                  }
-                >
-                  <span>View my work</span>
-                </Button>
+                    }
+                  >
+                    <span>View my work</span>
+                  </Button>
+                </a>
               </motion.div>
 
               <motion.div
@@ -94,7 +97,9 @@ export default function SectionHero() {
                   delay: 2.2,
                 }}
               >
-                <Button variant="text">Let's talk</Button>
+                <a href="#contact" onClick={scrollToHash}>
+                  <Button variant="text">Let's talk</Button>
+                </a>
               </motion.div>
             </div>
           </div>

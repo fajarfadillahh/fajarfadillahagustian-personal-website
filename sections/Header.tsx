@@ -210,9 +210,15 @@ export default function SectionHeader() {
                 </svg>
               </div>
 
-              <Button variant="primary" className="hidden md:inline-flex">
-                Contact Me
-              </Button>
+              <a
+                href="mailto:fajarfadillahagustian@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="primary" className="hidden md:inline-flex">
+                  Contact Me
+                </Button>
+              </a>
             </div>
           </div>
         </div>
