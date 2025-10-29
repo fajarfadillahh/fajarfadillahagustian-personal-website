@@ -67,52 +67,52 @@ export const projects = [
 
 export const faqs = [
   {
-    question: "How long does it take to build a website?",
+    question: "What kind of projects do you usually work on?",
     answer:
-      "It depends on the complexity of the website and the scope of the project.",
+      "Mostly web-based stuff from creative landing pages to full-blown web apps. I love projects where I can mix design aesthetics with solid, clean code to create something that actually feels alive.",
   },
   {
-    question: "What is your development process like?",
+    question: "Do you only work with businesses, or also personal projects?",
     answer:
-      "I follow a hands-on approach starting with project planning, building out the core features, and regular check-ins to make sure everything matches your needs.",
+      "Both! Whether it's helping a brand level up their online presence or building something experimental just for fun, I'm always down for projects that let me explore new creative or technical ideas.",
   },
   {
-    question: "Do you work with international clients?",
+    question: "What's your approach to blending creativity and clean code?",
     answer:
-      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
+      "I start from the experience first — how users should feel. Then I back it up with structure, performance, and clean code to make sure the creativity isn't just aesthetic, but functional too.",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "Can you help improve my existing website?",
     answer:
-      "I have experience across various industries including technology, retail, hospitality, and professional services, bringing fresh perspectives to each project.",
+      "For sure! I can help redesign, refactor, or even rebuild your site to make it faster, cleaner, and more engaging basically turning it into something that truly reflects your brand's vibe.",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Sarah Chen",
-    company: "Pixel Perfect",
-    role: "Head of Design",
+    name: "Gufronnakan Arif W.",
+    company: "FG Labs Agency",
+    role: "Founder & Developer",
     quote:
-      "Alex's expertise in both technical development and design created a beautiful, high-performing website.",
+      "Building a digital agency with Fajar has been both a fun journey and a challenge that has made us stronger.",
     image: testimonial1,
     imagePositionY: 0.2,
   },
   {
-    name: "Marcus Rodriguez",
-    company: "Craft Coffee Co.",
+    name: "Nico Samuel",
+    company: "RuangObat.id",
     role: "Founder",
     quote:
-      "Alex transformed our boutique coffee brand with a website that perfectly balances aesthetics and functionality.",
+      "I developed the RuangObat.id web application with Fajar, and as you can see the results are very impressive.",
     image: testimonial2,
     imagePositionY: 0.1,
   },
   {
-    name: "Emily Watson",
-    company: "Studio Minimal",
-    role: "Creative Director",
+    name: "Ayu Sundari",
+    company: "RAGA Health",
+    role: "Founder & Specialist",
     quote:
-      "The collaborative process was amazing. Alex brought lots of fresh perspectives and innovative solutions.",
+      "This collaboration gave me a lot of experience in terms of digitalization and also special connections.",
     image: testimonial3,
     imagePositionY: 0.55,
   },
