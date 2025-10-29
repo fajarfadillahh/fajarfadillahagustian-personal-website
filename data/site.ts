@@ -1,8 +1,9 @@
-import project1 from "@/assets/images/project-1.jpg";
-import project2 from "@/assets/images/project-2.jpg";
-import project3 from "@/assets/images/project-3.jpg";
-import project4 from "@/assets/images/project-4.jpg";
-import project5 from "@/assets/images/project-5.jpg";
+import project1 from "@/assets/images/project-1.webp";
+import project2 from "@/assets/images/project-2.webp";
+import project3 from "@/assets/images/project-3.webp";
+import project4 from "@/assets/images/project-4.webp";
+import project5 from "@/assets/images/project-5.webp";
+import project6 from "@/assets/images/project-6.webp";
 
 import testimonial1 from "@/assets/images/testimonial-1.jpg";
 import testimonial2 from "@/assets/images/testimonial-2.jpg";
@@ -33,24 +34,34 @@ export const navItems = [
 
 export const projects = [
   {
-    name: "Artisan Brew Co.",
+    name: "Qosan.id Rent House Web",
     image: project1,
+    href: "/",
   },
   {
-    name: "Wavelength Studios",
+    name: "RuangObat.id",
     image: project2,
+    href: "https://ruangobat.id/",
   },
   {
-    name: "Nova Fitness",
+    name: "Jakarta Pasti Sehat",
     image: project3,
+    href: "https://jakartapastisehat.com/",
   },
   {
-    name: "Urban Plates",
+    name: "Pharma Metro City Group",
     image: project4,
+    href: "https://pharma-metrocity-group.vercel.app/",
   },
   {
-    name: "Bloom Botanicals",
+    name: "LuxSpace Shop",
     image: project5,
+    href: "https://luxspacefadillah.netlify.app/",
+  },
+  {
+    name: "Literasi Book Store",
+    image: project6,
+    href: "https://literasi-book-store.vercel.app/",
   },
 ];
 
