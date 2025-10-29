@@ -6,7 +6,7 @@ const siteConfig = {
     "Fajar Fadillah Agustian | Frontend Developer Enthusiast & Creative Technologist 🚀",
   description:
     "Portfolio dan personal website Fajar Fadillah Agustian — Frontend Developer Enthusiast & Creative Technologist yang fokus di web development dan digital innovation.",
-  url: "https://fajarfadillahagustian.com",
+  url: "https://fajarfadillahagustian.vercel.app",
   image: "/og-image.jpg",
   twitter: "@fajarfadillahagustian",
   locale: "id_ID",
@@ -21,6 +21,14 @@ const siteConfig = {
     "Tech Blog Indonesia",
     "Digital Innovation",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 type GenerateMetadataProps = {
@@ -43,6 +51,7 @@ export function generateMetadata({
     creator: siteConfig.name,
     publisher: siteConfig.name,
     metadataBase: new URL(siteConfig.url),
+    icons: siteConfig.icons,
     openGraph: {
       title: metaTitle,
       description: metaDesc,
